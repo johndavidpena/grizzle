@@ -28,3 +28,58 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# {/* <h1>NOW with Firebase Client-Side template (Julian)</h1> */}
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+.now
+now.json
+
+# production
+/build
+
+# misc
+.DS_Store
+.env*
+.env
+.env.build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# from NOW
+.hg
+.git
+.gitmodules
+.svn
+.cache
+.next
+.npmignore
+.dockerignore
+.gitignore
+.*.swp
+.wafpicke-*
+.lock-wscript
+.env
+.env.*
+.venv
+npm-debug.log
+config.gypi
+node_modules
+__pycache__/
+venv/
+CVS
