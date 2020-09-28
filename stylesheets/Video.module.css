@@ -1,0 +1,24 @@
+/* a new approach */
+.VID {
+  max-width: 50%;
+  height: auto;
+}
+
+/* original style */
+.videoResponsive{
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  /* padding-bottom: 177.77%; */
+  position: relative;
+  height: 0;
+  margin: 20px 0;
+  border-radius: var(--border-radius);
+}
+
+.videoResponsive iframe{
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

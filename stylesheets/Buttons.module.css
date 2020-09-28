@@ -1,0 +1,35 @@
+.form button {
+  appearance: none;
+  outline: 0;
+  background-color: var(--rhone-orange);
+  /* border: 1px solid var(--grey-700); */
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px 15px;
+  color: var(--grey-050);
+  width: 225px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+  margin: 0 auto;
+  display: block;
+  text-decoration: none;
+}
+
+.signOut {
+  appearance: none;
+  outline: 0;
+  background-color: var(--rhone-orange);
+  /* border: 1px solid var(--grey-700); */
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 10px 15px;
+  color: var(--grey-050);
+  width: 225px;
+  cursor: pointer;
+  font-size: 18px;
+  transition-duration: 0.25s;
+  margin: 0 auto 5rem auto;
+  display: block;
+  text-decoration: none;
+}

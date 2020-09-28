@@ -1,0 +1,27 @@
+/* Styles for FacebookUserCard */
+.UserCard {
+  width: 250px;
+  height: fit-content;
+
+  padding: 1rem 0;
+  margin: 2rem auto;
+
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: space-around;
+}
+
+.UserCardWelcome {
+  display: flex;
+  flex-direction: column;
+}
+
+.UserCard span {
+  padding: 0 !important;
+}
+
+.UserAvatar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
