@@ -39,25 +39,25 @@ export default function MyApp({ Component, pageProps }) {
         }
 
         :root {
+          --text-darkest: hsl(0, 0%, 19%);
+          --text-darker: hsl(0, 0%, 31%);
           --text-dark: hsl(0, 0%, 49%);
           --text-normal: hsl(0, 0%, 69%);
           --text-light: hsl(0, 0%, 81%);
+          --text-lighter: hsl(0, 0%, 92%);
 
           --white: hsl(0, 0%, 100%);
           --off-white: hsl(0, 0%, 99%);
 
-          --kungfu-yellow: #F2C510;
-
           --rhone-orange: #FF6822;
-          --rhone-orangeText: #FFDCCC;
-          --rhone-yellow: #FFC400;
-          --rhone-yellowText: #FFF3CC;
+          --rhone-orange-light: #FFDCCC;
           --rhone-green: #3AD771;
-          --rhone-greenText: #D5F6E0;
-          --rhone-darkBlue: #2B3654;
-          --rhone-darkBlueText: #DDE2EE;
-          --rhone-lime: #D2E12D;
-          --rhone-limeText: #F5F9D2;
+          --rhone-green-light: #D5F6E0;
+          --blue: #228AFF;
+          --light-blue: #7CC1E4;
+
+          --buyer-green: #005D82;
+          --buyer-green-light: #D5F7F7;
 
           --grey-050: #F7F7F7;
           --grey-100: #E1E1E1;

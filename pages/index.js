@@ -1,20 +1,21 @@
 import { useEffect } from 'react'
 import Head from 'next/head'
-import HomeStyles from '../stylesheets/Home.module.css'
+import Link from 'next/link'
+import IndexStyles from '../stylesheets/Index.module.css'
 import { useUser } from '../context/userContext'
 // import Facebook from '../components/Facebook/index'
 import Google from '../components/Google/index'
 import UserCard from '../components/Cards/UserCard'
 import SignOut from '../components/Buttons/SignOut'
 
-export default function Home() {
+export default function Index() {
   // custom hook to get context values
   const { loadingUser, user } = useUser()
 
   useEffect(() => {
     if (!loadingUser) {
       // u know that the user is loaded: either logged in or out
-      console.log('User: ', user)
+      // console.log('User: ', user)
     }
     // u also have ur firebase app initialized
   }, [loadingUser, user])
@@ -22,12 +23,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>GRIZZLE</title>
+        <title>GRIZZLE | SOI Management</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {!user && (
-        <div className={HomeStyles.loginButtons}>
+        <div className={IndexStyles.loginButtons}>
           {/* NOTE: Facebook was working b4 adding Google but not now */}
           {/* <Facebook /> */}
           <Google />
@@ -37,6 +38,27 @@ export default function Home() {
       {user && (
         <>
           <UserCard user={user} />
+
+          <h1 className={IndexStyles.heading}>Welcome Brother!</h1>
+
+          <p className={IndexStyles.welcome}>Grow & nurture your SOI.</p>
+
+          <Link href='/home'>
+            <div className={IndexStyles.linkContainer}>
+              <p className={IndexStyles.linkText}>Home</p>
+            </div>
+          </Link>
+
+          <Link href='/newContact'>
+            <div className={IndexStyles.linkContainer}>
+              <p className={IndexStyles.linkText}>New</p>
+            </div>
+          </Link>
+
+          <br />
+          <br />
+          <br />
+
           <SignOut />
         </>
       )}

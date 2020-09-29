@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import GoogleStyles from '../../stylesheets/Google.module.css'
 import firebase from '../../firebase/clientApp'
+import Router from 'next/router'
 
 const GoogleLogin = props => {
   // create an instance of the Google provider object, ORIGINALLY var
@@ -10,7 +11,7 @@ const GoogleLogin = props => {
   //   'display': 'popup'
   // })
 
-  // TODO: save to database
+  // TODO: save to database?
   const loginWithGooglePopup = async () => {
     await firebase.auth().signInWithPopup(provider)
       .then(function (result) {
@@ -20,6 +21,9 @@ const GoogleLogin = props => {
         // console.log('loginWithGooglePopup -> googleUser', googleUser)
         const googleUser = result.user
         props.setGoogleUser(googleUser)
+      })
+      .then(() => {
+        Router.push('/home')
       })
       .catch(function (error) {
         // TODO: handle errors here

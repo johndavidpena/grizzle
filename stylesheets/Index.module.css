@@ -1,0 +1,28 @@
+.heading,
+.welcome {
+  text-align: center;
+  color: var(--text-lighter);
+}
+
+.heading {
+  font-family: 'Marvin';
+}
+
+.loginButtons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.linkContainer {
+
+}
+
+.linkText {
+  color: var(--blue);
+  cursor: pointer;
+  text-align: center;
+}

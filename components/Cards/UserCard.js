@@ -5,7 +5,7 @@ const UserCard = ({ user }) => {
   return (
     <div className={CardStyles.UserCard}>
       <div className={CardStyles.UserCardWelcome}>
-        <span>Welcome</span>
+        <span>Agent Name</span>
         <span>{user.displayName}</span>
       </div>
 
