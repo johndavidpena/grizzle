@@ -1,11 +1,28 @@
+.fullPage {
+  min-height: 100vh;
+  background-image: url(https://res.cloudinary.com/mimas-music/image/upload/v1601480303/Grizzle/blueTexturedBackground.webp);
+}
+
+
+.grid3column {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 .heading,
 .welcome {
   text-align: center;
-  color: var(--text-lighter);
 }
 
 .heading {
   font-family: 'Marvin';
+  font-size: 25vw;
+  color: var(--green);
+}
+
+.welcome {
+  color: var(--text-lighter);
 }
 
 .loginButtons {
@@ -17,8 +34,17 @@
   transform: translate(-50%, -50%);
 }
 
-.linkContainer {
+.navSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
+.linkContainer svg {
+  font-size: 5rem;
+  color: var(--orange-light);
+  width: 100vw;
+  margin: 0 auto;
 }
 
 .linkText {

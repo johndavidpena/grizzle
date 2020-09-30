@@ -49,10 +49,10 @@ export default function MyApp({ Component, pageProps }) {
           --white: hsl(0, 0%, 100%);
           --off-white: hsl(0, 0%, 99%);
 
-          --rhone-orange: #FF6822;
-          --rhone-orange-light: #FFDCCC;
-          --rhone-green: #3AD771;
-          --rhone-green-light: #D5F6E0;
+          --orange: #FF6822;
+          --orange-light: #FFDCCC;
+          --green: #3AD771;
+          --green-light: #D5F6E0;
           --blue: #228AFF;
           --light-blue: #7CC1E4;
 

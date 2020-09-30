@@ -1,0 +1,9 @@
+.homeContainer {
+  padding: 1rem;
+}
+
+.homeContainer svg {
+  font-size: 3rem;
+  color: var(--orange);
+  cursor: pointer;
+}

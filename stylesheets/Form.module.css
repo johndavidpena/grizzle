@@ -1,37 +1,3 @@
-/* Wrapper for forms */
-.formWrapper {
-  margin: var(--obj-margin-mobile);
-  width: 288px;
-  background-color: var(--white);
-  border-radius: var(--border-radius);
-}
-@media (min-width: 640px) {
-  .formWrapper {
-    width: 400px;
-  }
-}
-@media (min-width: 768px) {
-  .formWrapper {
-    width: 500px;
-  }
-}
-
-.textareaWrapper {
-  margin: var(--obj-margin-mobile);
-  /* width: 288px; */
-}
-@media (min-width: 640px) {
-  .textareaWrapper {
-    /* width: 400px; */
-  }
-}
-@media (min-width: 768px) {
-  .textareaWrapper {
-      /* width: 500px; */
-  }
-}
-
-/* Used on SignUp, SignIn, NOT ResourceNeeds */
 .container {
 	padding: 2rem 0;
 	text-align: center;
@@ -39,6 +5,8 @@
 
 .container h2 {
   color: var(--text-lighter);
+  font-family: 'Marvin';
+  font-size: 15vw;
 }
 
 .form {
@@ -52,7 +20,7 @@
   appearance: none;
   outline: 0;
   background-color: var(--off-white);
-  width: 225px;
+  width: 80vw;
 
   border-radius: 4px;
   padding: 10px 15px;

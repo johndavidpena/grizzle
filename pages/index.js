@@ -5,6 +5,7 @@ import IndexStyles from '../stylesheets/Index.module.css'
 import { useUser } from '../context/userContext'
 // import Facebook from '../components/Facebook/index'
 import Google from '../components/Google/index'
+import Navigation from '../components/Navigation'
 import UserCard from '../components/Cards/UserCard'
 import SignOut from '../components/Buttons/SignOut'
 
@@ -27,41 +28,35 @@ export default function Index() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {!user && (
-        <div className={IndexStyles.loginButtons}>
-          {/* NOTE: Facebook was working b4 adding Google but not now */}
-          {/* <Facebook /> */}
-          <Google />
-        </div>
-      )}
+      <div className={IndexStyles.fullPage}>
+        {!user && (
+          <div className={IndexStyles.loginButtons}>
+            {/* NOTE: Facebook was working b4 adding Google but not now */}
+            {/* <Facebook /> */}
+            <Google />
+          </div>
+        )}
 
-      {user && (
-        <>
-          <UserCard user={user} />
+        {user && (
+          <div className={IndexStyles.grid3column}>
+            <section className={IndexStyles.textSection}>
+              <Link href='/'>
+                <h1 className={IndexStyles.heading}>GRIZZLE</h1>
+              </Link>
 
-          <h1 className={IndexStyles.heading}>Welcome Brother!</h1>
+              <p className={IndexStyles.welcome}>Grow & nurture your SOI.</p>
+            </section>
 
-          <p className={IndexStyles.welcome}>Grow & nurture your SOI.</p>
+            <Navigation />
 
-          <Link href='/home'>
-            <div className={IndexStyles.linkContainer}>
-              <p className={IndexStyles.linkText}>Home</p>
-            </div>
-          </Link>
+            <section className={IndexStyles.userSection}>
+              <UserCard user={user} />
 
-          <Link href='/newContact'>
-            <div className={IndexStyles.linkContainer}>
-              <p className={IndexStyles.linkText}>New</p>
-            </div>
-          </Link>
-
-          <br />
-          <br />
-          <br />
-
-          <SignOut />
-        </>
-      )}
+              <SignOut />
+            </section>
+          </div>
+        )}
+      </div>
     </>
   )
 }

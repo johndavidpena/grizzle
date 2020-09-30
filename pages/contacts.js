@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
 import Head from 'next/head'
 import { useUser } from '../context/userContext'
+import Home from '../components/Home'
 import Google from '../components/Google/index'
-import UserCard from '../components/Cards/UserCard'
+import ContactList from '../components/ContactList'
 import IndexStyles from '../stylesheets/Index.module.css'
 
 export default function Contacts() {
@@ -29,11 +30,11 @@ export default function Contacts() {
 
       {user && (
         <>
-          <UserCard user={user} />
+          <Home />
 
           <h1 className={IndexStyles.heading}>Contacts</h1>
 
-
+          <ContactList />
         </>
       )}
     </>

@@ -65,7 +65,7 @@ const NewContactForm = () => {
 
   return (
     <div className={FormStyles.container}>
-      <h2>Contact Info</h2>
+      <h2>New Contact</h2>
       <form onSubmit={formik.handleSubmit}
         className={FormStyles.form}>
         {formik.touched.firstName && formik.errors.firstName ? (

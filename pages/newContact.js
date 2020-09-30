@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import Head from 'next/head'
 import { useUser } from '../context/userContext'
 import Google from '../components/Google/index'
-import UserCard from '../components/Cards/UserCard'
+import Home from '../components/Home'
 import IndexStyles from '../stylesheets/Index.module.css'
 import NewContactForm from '../components/NewContact/NewContactForm'
 
@@ -29,11 +29,11 @@ export default function NewContact() {
       )}
 
       {user && (
-        <>
-          <UserCard user={user} />
+        <div className={IndexStyles.fullPage}>
+          <Home />
 
           <NewContactForm />
-        </>
+        </div>
       )}
     </>
   )
